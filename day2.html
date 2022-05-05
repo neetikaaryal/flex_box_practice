@@ -2,16 +2,23 @@
         <head>
             <style>
             .flex-container {
+              justify-content: flex-start;
               display: flex;
             
             }
-            
+ 
+         
             .flex-container > div {
               background-color: #f1f1f1;
               margin: 10px;
               padding: 20px;
               font-size: 30px;
             }
+            .square {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+}
             </style>
         </head>
         <body>
@@ -19,22 +26,35 @@
               <div><img src="neetikaa.jpg" width="300" height="300" border="5px black" ></div>
               
               <div>Lorem ipsum dolor sit amet.</div>
-              <div><label for="email"><b>Name:</b></label>
-                <input type="text" placeholder="Enter Name" name="name" id="name" required>
+              <div><label for="name"><b>Name:</b></label>
+                <input type="name" placeholder="Enter Name" name="name" id="name" required>
                 <br>
                 <label for="email"><b>Email:</b></label>
-                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                <input type="email" placeholder="Enter Email" name="email" id="email" required>
                   <br>
-                <label for="psw"><b>phone:</b></label>
+                <label for="phone"><b>phone:</b></label>
                 <input type="phone" placeholder="Enter Phone" name="phone" id="phone" required>
                    <br>
                 <label for="address"><b>Address:</b></label>
                 <input type="address" placeholder="Enter Address" name="address" id="address" required>
-                   <br>
-                
+                   <br>    
+
+
               </div>  
+
+              <div><div class="square" id="demo"></div></div>
+                <div>Lorem ipsum dolor sit amet.</div>
+                <div>
+               <button id="demo" onclick="myFunction()">button</button> 
+
+<script>
+function myFunction() {
+  document.getElementById("demo").style.backgroundColor = "red"
+}
+</script>
+                </div>  
             </div>
-         
+           
     </body>
 
 <br>
